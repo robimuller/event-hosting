@@ -1,0 +1,149 @@
+.navbar-container{
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(70,70,70);
+}
+
+/* @media (max-width: 768px) {
+  .navbar-container {
+    justify-content: flex-start;
+  }
+} */
+
+.navbar-container ul{
+  list-style: none;
+  margin: 0;
+  padding: 0%;
+}
+
+.navbar-container{
+  color: rgb(25, 25, 25);
+}
+
+.navbar-right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* ---------SEARCHBOX--------- */
+
+.box{
+  position: relative;
+  margin-right: 6rem;
+}
+
+.input {
+  width: 45px;
+  height: 45px;
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: white;
+  outline: none;
+  transition: .5s;
+}
+.box:hover input{
+  width: 550px;
+  background: #16191D;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .box:hover input {
+    width: 250px;
+  }
+}
+
+.box i{
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  transform: translate(-50%,-50%);
+  font-size: 20px;
+  color: #ffffff;
+  transition: .2s;
+}
+.box:hover i{
+  opacity: 0;
+  z-index: -1;
+}
+
+/* ----------Logo------- */
+
+.logo-container {
+  padding: 2rem;
+}
+
+a:link{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.logo-container h1{
+  margin-left: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 5px;
+}
+
+@media (max-width: 768px) {
+  .logo-container h1 {
+    display: none;
+  }
+}
+
+.logo-container svg{
+  width: 40px;
+  height: auto;
+}
+/* ---------button-------- */
+.button a:link{
+  position: relative;
+  margin-right: 6rem;
+  width: 45px;
+  height: 45px;
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  outline: none;
+  transition: .5s;
+  text-decoration: none;
+}
+
+.button a:visited{
+  outline: none;
+  border: 1px solid #ffffff;
+}
+
+
+.button i{
+  position: absolute;
+  top: 50%;
+  left: 21px;
+  transform: translate(-50%,-50%);
+  font-size: 20px;
+  color: #ffffff;
+  transition: .2s;
+}
+.button:hover i{
+  color: rgb(70,70,70);
+}
+
+.button a:hover{
+  background: white;
+}

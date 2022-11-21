@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="path-container">
+    <%= link_to root_path do %>
+      <p> Back to Events</p>
+    <% end %>
+  </div>
+  <div class="card-container">
+    <%= form_with model: @event do |f| %>
+          <%= f.text_field :title, placeholder:"What would you like to do?" %>
+          <%= f.text_field :location, placeholder:"Add location" %>
+          <%= f.date_field :date %>
+          <div class="expense-field">
+            <p>Cover expenses?</p><%= f.check_box :expenses %>
+          </div>
+          <%= f.submit%>
+    <% end %>
+  </div>
+</div>

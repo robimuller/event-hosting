@@ -1,0 +1,83 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-container{
+  background: url("https://cdn.pixabay.com/photo/2017/08/06/04/09/people-2588594_1280.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 600px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.315);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  filter: drop-shadow(10px 10px rgba(0, 10, 10, 0.17));
+  border-radius: 15px;
+}
+
+input[type="text"],input[type="checkbox"],input[type="date"], .expense-field {
+  display: flex;
+}
+
+
+.card-container input[type="text"] {
+  background: rgba(0, 0, 0, 0.763);
+  width: 18rem;
+  height: 2.3rem;
+  margin: 1rem;
+  border-radius: 15px;
+  border: 1px solid rgb(85, 85, 85);
+  color: white;
+  padding: 0 1rem;
+}
+
+input[type="date"] {
+  background: rgba(0, 0, 0, 0.763);
+  width: 18rem;
+  height: 2.3rem;
+  margin: 1rem;
+  border-radius: 15px;
+  border: 1px solid rgb(85, 85, 85);
+  padding: 0 1rem;
+  font-weight: 100;
+  opacity: .8;
+  color: grey;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.expense-field{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  background: rgba(0, 0, 0, 0.763);
+  width: 18rem;
+  height: 2.3rem;
+  margin: 1rem;
+  border-radius: 15px;
+  border: 1px solid rgb(85, 85, 85);
+  color: white;
+  padding: 0 1rem;
+}
+
+p {
+  font-weight: 25;
+  opacity: .8;
+  color: grey;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input::placeholder {
+  font-weight: 100;
+  opacity: .8;
+  color: grey;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.path-container{
+background: white;
+}
